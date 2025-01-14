@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Clean and simple font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent box model */
+    color: #fff; /* White text for good contrast */
+    background-image: url('download.jpeg'); /* Correct path for background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Avoid repeating the background image */
+}
+
+/* Header Styles */
+header {
+    background-color: #C8A3D1; /* Light cloudy pink background */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center align header content */
+    font-size: 2rem; /* Slightly large font size for prominence */
+    font-weight: bold; /* Make header text bold */
+    padding: 5px 5px; /* Padding around the header content */
+    width: 800px; /* Fixed width for larger screens */
+    height: auto; /* Adjust height automatically */
+    margin-left: 550px; /* Center header horizontally on wide screens */
+}
+
+header h1 {
+    font-size: 36px; /* Font size for header text */
+}
+
+/* Quote Section */
+#quoteSection {
+    margin: 50px auto; /* Center section vertically and horizontally */
+    padding: 30px; /* Padding inside the section */
+    max-width: 800px; /* Limit the maximum width */
+    background-color: #A3C9D7; /* Light cloudy blue background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center align text */
+}
+
+#quoteBox {
+    background-color: #E3B9D7; /* Soft pastel pink background */
+    color: #4A90B1; /* Soft blue-gray text for readability */
+    padding: 20px; /* Padding inside the quote box */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.2rem; /* Slightly larger font for readability */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Button Styles */
+button {
+    background-color: #B3A2D3; /* Soft lavender pink background */
+    color: white; /* White text for contrast */
+    padding: 12px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Show pointer on hover */
+    font-size: 1.2rem; /* Slightly larger font size for readability */
+    margin-top: 20px; /* Add spacing above the button */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+button:hover {
+    background-color: #A296D3; /* Slightly darker lavender on hover */
+}
+
+/* Media Queries */
+
+/* Styles for tablets (768px and above) */
+@media (min-width: 600px) {
+    header {
+        margin-left: auto; /* Adjust margin for tablets */
+        margin-right: auto; /* Center header */
+        width: 90%; /* Make header responsive */
+    }
+
+    #quoteSection {
+        padding: 20px; /* Reduce padding on tablets */
+        max-width: 600px; /* Adjust max-width */
+    }
+
+    #quoteBox {
+        font-size: 1.1rem; /* Slightly smaller font size */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button font size for tablets */
+        padding: 10px 16px; /* Adjust button padding */
+    }
+}
+
+/* Styles for mobile devices (480px and below) */
+@media (max-width: 400px) {
+    body {
+        text-align: center; /* Center align text for small screens */
+    }
+
+    header {
+        font-size: 1.5rem; /* Smaller font size for header */
+        margin: 0 10px; /* Add margin for smaller screens */
+        width: auto; /* Make header width responsive */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    #quoteSection {
+        padding: 15px; /* Reduce padding */
+        margin: 20px; /* Add margin for better spacing */
+        max-width: 100%; /* Use full width */
+    }
+
+    #quoteBox {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    button {
+        font-size: 0.9rem; /* Reduce font size for buttons */
+        padding: 8px 12px; /* Adjust button padding */
+    }
+}
