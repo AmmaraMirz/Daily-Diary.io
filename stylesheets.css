@@ -1,0 +1,292 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Palette */
+:root {
+    --color-bg: #00000099;       /* Dark background */
+    --color-navbar: #6e3086;     /* Navbar background */
+    --color-text: #ffffff;       /* Text color */
+    --color-hover: #E36B5D;      /* Hover effect color */
+    --color-accent: #B9415A;     /* Accent color */
+}
+
+/* Header Styling */
+header {
+    text-align: center;              /* Center align text */
+    background-color: var(--color-bg); /* Background color from palette */
+    color: var(--color-text);        /* Text color from palette */
+    padding: 20px;                   /* Spacing around header */
+}
+
+header h1 {
+    font-size: 36px;                 /* Font size for header title */
+}
+
+/* Navbar Styling */
+nav ul {
+    display: flex;                   /* Horizontal layout for navigation */
+    justify-content: center;         /* Center align items */
+    background-color: var(--color-navbar); /* Navbar background color */
+    list-style-type: none;           /* Remove bullets */
+    padding: 10px 0;                 /* Add spacing */
+}
+
+nav ul li {
+    margin: 0 15px;                  /* Spacing between links */
+}
+
+nav ul li a {
+    color: var(--color-text);        /* Link text color */
+    text-decoration: none;           /* Remove underline */
+    font-size: 18px;                 /* Font size */
+    padding: 5px 15px;               /* Add padding for clickable area */
+    border-radius: 5px;              /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background-color: var(--color-hover); /* Hover background color */
+    color: var(--color-bg);               /* Hover text color */
+}
+
+/* Main Section Styling */
+section {
+    text-align: center;              /* Center align text */
+    margin: 50px 0;                  /* Add margin around sections */
+    font-size: 20px;                 /* Font size for text */
+    color: var(--color-text);        /* Text color */
+}
+
+/* Welcome Box Styling */
+.welcome-box {
+    background-color: var(--color-accent); /* Background color */
+    color: var(--color-text);              /* Text color */
+    padding: 50px;                         /* Spacing inside the box */
+    margin: 50px auto;                     /* Center and add margin */
+    border-radius: 15px;                   /* Rounded corners */
+    text-align: center;                    /* Center align text */
+    max-width: 600px;                      /* Limit width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.welcome-box h2 {
+    font-size: 48px;                       /* Larger font for heading */
+    margin-bottom: 20px;                   /* Space below heading */
+}
+
+.welcome-box p {
+    font-size: 24px;                       /* Font size for paragraph */
+    line-height: 1.5;                      /* Line spacing */
+}
+
+/* Body Background Styling */
+body {
+    background-image: url('02.jpg');      /* Background image */
+    background-size: cover;              /* Cover the entire screen */
+    background-position: center;         /* Center the image */
+    background-repeat: no-repeat;        /* Prevent tiling */
+}
+
+/* Calendar Section */
+.calendar-section {
+    background-color: #030001af;         /* Semi-transparent dark background */
+    color: #fff;                         /* Text color */
+    text-align: center;                  /* Center align text */
+    padding: 20px;                       /* Spacing inside the section */
+    margin-top: 20px;                    /* Space above section */
+    border-radius: 10px;                 /* Rounded corners */
+    max-width: 450px;                    /* Limit width */
+    margin-left: auto;                   /* Center horizontally */
+    margin-right: auto;
+}
+
+.calendar-section h2 {
+    margin-bottom: 20px;                 /* Space below heading */
+    font-size: 28px;                     /* Font size */
+    font-weight: bold;                   /* Bold text */
+}
+
+/* Calendar Box */
+.calendar-box {
+    background-color: #7f558b;           /* Calendar box background */
+    padding: 20px;                       /* Spacing inside the box */
+    border-radius: 10px;                 /* Rounded corners */
+    width: 100%;                         /* Full width */
+    max-width: 400px;                    /* Limit width */
+    margin: auto;                        /* Center horizontally */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Month Navigation */
+.month-navigation {
+    display: flex;                       /* Horizontal layout */
+    justify-content: space-between;      /* Space between navigation buttons */
+    align-items: center;                 /* Align items vertically */
+    margin-bottom: 15px;                 /* Space below */
+}
+
+.nav-button {
+    background-color: #583068;           /* Button background */
+    color: #fff;                         /* Button text color */
+    border: none;                        /* Remove border */
+    padding: 8px 15px;                   /* Spacing inside button */
+    font-size: 16px;                     /* Font size */
+    border-radius: 8px;                  /* Rounded corners */
+    cursor: pointer;                     /* Pointer cursor */
+    transition: background-color 0.3s;   /* Smooth hover effect */
+}
+
+.nav-button:hover {
+    background-color: #7f558b;           /* Hover background color */
+}
+
+.month-year-display {
+    font-size: 20px;                     /* Font size */
+    font-weight: bold;                   /* Bold text */
+    color: #fff;                         /* Text color */
+}
+
+/* Calendar Grid */
+#calendar {
+    display: grid;                       /* Grid layout */
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days */
+    gap: 5px;                            /* Space between grid items */
+    justify-items: center;               /* Center items */
+    padding: 10px;                       /* Padding around grid */
+}
+
+/* Day of the Week Styling */
+#calendar .day {
+    font-weight: bold;                   /* Bold text */
+    background-color: #583068;           /* Background color */
+    color: #fff;                         /* Text color */
+    padding: 8px;                        /* Spacing */
+    border-radius: 8px;                  /* Rounded corners */
+    font-size: 16px;                     /* Font size */
+}
+
+/* Date Styling */
+#calendar .date {
+    background-color: #76478a;           /* Background color */
+    color: #fff;                         /* Text color */
+    width: 40px;                         /* Fixed width */
+    height: 40px;                        /* Fixed height */
+    display: flex;                       /* Flexbox for centering */
+    justify-content: center;             /* Center horizontally */
+    align-items: center;                 /* Center vertically */
+    border-radius: 8px;                  /* Rounded corners */
+    font-size: 18px;                     /* Font size */
+    cursor: pointer;                     /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+#calendar .date:hover {
+    background-color: #8b6d9c;           /* Hover background color */
+    transform: scale(1.1);               /* Slight zoom effect */
+}
+
+/* Active Date Styling */
+#calendar .date.active {
+    background-color: #F6AA5F;           /* Active date background */
+    font-weight: bold;                   /* Bold text */
+}
+
+#calendar div {
+    padding: 5px;                        /* Space around calendar items */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #16213e;          /* Dark footer background */
+    color: #ffffff;                     /* Text color */
+    padding: 40px 0;                    /* Spacing inside footer */
+}
+
+footer .container {
+    display: flex;                      /* Horizontal layout */
+    justify-content: left;              /* Align items to the left */
+    flex-wrap: wrap;                    /* Wrap items on smaller screens */
+    max-width: 1200px;                  /* Limit width */
+    margin: 0 auto;                     /* Center horizontally */
+    padding: 0 20px;                    /* Inner padding */
+}
+
+/* Media Queries */
+/* Media Query for Tablets (768px and above) */
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .welcome-section h2 {
+        font-size: 2rem;
+    }
+
+    .calendar-box {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+/* Media Query for Mobile Devices (480px and below) */
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .welcome-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .welcome-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-box p {
+        font-size: 1rem;
+    }
+
+    .calendar-box {
+        font-size: 0.9rem;
+    }
+
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 20px;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+    
+}
+
+
+ 
