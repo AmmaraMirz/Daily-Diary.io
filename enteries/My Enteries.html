@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Diary</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="l.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>My Daily Diary</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section for Adding New Diary Entries -->
+        <section class="diary-input">
+            <h2>Add a New Entry</h2>
+            <form id="diaryForm">
+                <!-- Textarea for the user to write their diary entry -->
+                <textarea id="diaryEntry" placeholder="Write your thoughts here..." required></textarea>
+                <!-- Button to save the diary entry -->
+                <button type="submit">Save Entry</button>
+            </form>
+        </section>
+
+        <!-- Section for Displaying Existing Diary Entries -->
+        <section class="diary-entries">
+            <h2>Your Entries</h2>
+            <ul id="entriesList">
+                <!-- Placeholder for dynamically added diary entries -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="l.js"></script>
+</body>
+</html>

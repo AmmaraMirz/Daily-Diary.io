@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000; /* Black text */
+  background-image: url('Pinterest.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+  background-color: #7BA9C8; /* Slightly darker pastel blue */
+  color: #000; /* Black text */
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px 5px;
+  width: 800px;
+  height: auto;
+  margin-left: 550px;
+}
+
+header h1 {
+  font-size: 36px; /* Larger text for header */
+}
+
+/* Main Section */
+main {
+  margin: 20px auto;
+  max-width: 850px;
+  padding: 30px;
+  background: #331b5398; /* Slightly darker light pastel blue */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Diary Input and Entries Sections */
+.diary-input, .diary-entries {
+  margin-bottom: 30px;
+}
+
+.diary-input h2, .diary-entries h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333; /* Darker gray text */
+  margin-bottom: 10px;
+}
+
+/* Textarea Styles */
+textarea {
+  width: 96%;
+  height: 150px;
+  padding: 15px;
+  border: 2px solid #7BA9C8; /* Darker pastel blue border */
+  border-radius: 8px;
+  resize: none;
+  font-size: 18px; /* Bigger text in the textarea */
+  color: #000; /* Black text */
+  background-color: #E1F2F7; /* Light sky blue but a little darker */
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: #66B8D1; /* Slightly darker blue on focus */
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  background-color: #7BA9C8; /* Slightly darker pastel blue button */
+  color: #000; /* Black text */
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #66B8D1; /* Darker blue on hover */
+}
+
+/* Entries List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #F1A8C7; /* Slightly darker pastel pink background */
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 18px; /* Larger text for the entries */
+}
+
+ul li p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000; /* Black text */
+}
+
+/* Media Query for Small Tablets (600px and below) */
+@media (max-width: 600px) {
+  header {
+    width: 90%; /* Reduce header width */
+    margin: 10px auto; /* Center header */
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  main {
+    padding: 20px; /* Reduce padding in main content */
+  }
+
+  textarea {
+    font-size: 16px; /* Smaller font size in textarea */
+    height: 120px; /* Adjust textarea height */
+  }
+
+  button {
+    font-size: 16px; /* Smaller font for button */
+    padding: 10px 20px;
+  }
+
+  ul li {
+    font-size: 16px; /* Smaller text size for diary entries */
+    padding: 10px; /* Less padding for smaller screens */
+  }
+}
+
+/* Media Query for Very Small Screens (400px and below) */
+@media (max-width: 400px) {
+  header {
+    font-size: 1.2rem; /* Even smaller font size for very small screens */
+  }
+
+  textarea {
+    height: 100px; /* Further adjust textarea height */
+  }
+
+  button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 8px 15px;
+  }
+
+  ul li {
+    font-size: 14px; /* Reduce text size for diary entries */
+    padding: 8px; /* Reduce padding */
+  }
+}

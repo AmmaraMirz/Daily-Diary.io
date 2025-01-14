@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Sets font family */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border don't affect the element's size */
+    color: #fff; /* Sets text color to white */
+    background-image: url('asthetic/wallpaper.jpeg'); /* Sets the background image */
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+}
+
+/* Header Styles */
+header {
+    background-color: #D3C8E3; /* Light lavender background */
+    color: white; /* Sets text color to white */
+    text-align: center; /* Centers the header text */
+    font-size: 2rem; /* Font size for header */
+    font-weight: bold; /* Makes the header text bold */
+    padding: 5px 5px;
+    width: 800px; /* Sets a fixed width for the header */
+    height: auto; /* Automatic height based on content */
+}
+
+/* Self-Care Tracker Section */
+.self-care-section {
+    margin: 50px auto; /* Centers the self-care section and adds vertical spacing */
+    padding: 30px;
+    max-width: 800px; /* Maximum width of the tracker */
+    background-color: #E3D6F4; /* Light purple with a subtle hint of pink */
+    border-radius: 10px; /* Rounded corners for the tracker section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow around the section */
+    text-align: center; /* Centers the text within the section */
+}
+
+.self-care-box {
+    display: flex; /* Flexbox layout for items */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 30px; /* Adds space between each item */
+}
+
+.tracker-item {
+    background-color: #B3D7F1; /* Light blue background for tracker items */
+    color: #4A6F91; /* Soft dark blue text */
+    padding: 20px; /* Padding inside tracker items */
+    border-radius: 8px; /* Rounded corners for tracker items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+input, select {
+    width: 96%; /* Takes up most of the width */
+    padding: 10px; /* Padding for input fields */
+    font-size: 1rem; /* Font size for input text */
+    border-radius: 6px; /* Rounded corners for inputs */
+    border: 1px solid #E3D6F4; /* Soft dark blue border */
+    margin-top: 10px; /* Adds top margin to input fields */
+}
+
+button {
+    background-color: #F1B6D7; /* Soft pink background for buttons */
+    color: rgb(0, 0, 0); /* Black text color */
+    padding: 12px 20px; /* Padding inside button */
+    border: none; /* Removes border from button */
+    border-radius: 6px; /* Rounded corners for button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 1.2rem; /* Increases font size for button */
+    margin-top: 20px; /* Adds top margin to button */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    width: 100%; /* Makes button width span the whole available space */
+}
+
+button:hover {
+    background-color: #F1A0C1; /* Slightly darker pink on hover */
+}
+
+.mood-item {
+    background-color: #fff; /* White background for mood items */
+    color: #F1A0C1; /* Dark pink text for mood items */
+    padding: 12px 20px; /* Padding inside mood items */
+    border: none; /* Removes border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 1.2rem; /* Increases font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin-top: 10px; /* Adds top margin to mood items */
+}
+
+.mood-item:hover {
+    background-color: #F1A0C1; /* Slightly darker pink for hover effect */
+    color: #1B2A41; /* Darker text color for better contrast */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablet-sized devices and up */
+@media (min-width: 600px) {
+    .self-care-section {
+        max-width: 90%; /* Allow self-care section to take 90% of the screen width */
+    }
+
+    header {
+        width: 100%; /* Allow header to take up the full screen width */
+        margin-left: 0; /* Remove left margin */
+    }
+}
+
+/* For mobile-sized devices (width 480px or smaller) */
+@media (max-width: 400px) {
+    
+    header {
+        width: 100%; /* Allow header to take up the full screen width */
+        margin-left: 0; /* Remove left margin */
+    }
+    body {
+        font-size: 14px; /* Adjust font size for mobile */
+        background-size: cover; /* Ensures the background image still covers the body */
+        background-position: top center; /* Adjust position for mobile screens */
+        background-attachment: scroll; /* Allows the background to scroll with content */
+        
+    }
+
+    .self-care-section {
+        padding: 20px; /* Reduce padding for mobile */
+        margin: 20px auto; /* Adjust margin for smaller screens */
+    }
+
+    .tracker-item {
+        padding: 15px; /* Reduce padding in tracker items */
+    }
+
+    button {
+        font-size: 1rem; /* Reduce button font size */
+    }
+}

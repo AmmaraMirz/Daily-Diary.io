@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and responsive layout -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Care Tracker</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="selfCare.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Track Your Self-Care</h1>
+    </header>
+
+    <!-- Self-Care Tracker Section -->
+    <section id="selfCareSection" class="self-care-section">
+        <!-- Self-Care Tracker Box that contains all input fields for tracking -->
+        <div class="self-care-box">
+            
+            <!-- Tracker Item for Hours of Sleep -->
+            <div class="tracker-item">
+                <h2>Hours of Sleep</h2>
+                <!-- Input field for sleep hours (number input with range 0 to 24) -->
+                <input type="number" id="sleepHours" placeholder="Enter hours" min="0" max="24">
+            </div>
+            
+            <!-- Tracker Item for Water Intake -->
+            <div class="tracker-item">
+                <h2>Water Balance</h2>
+                <!-- Input field for water intake in milliliters -->
+                <input type="number" id="waterIntake" placeholder="Enter water intake (ml)" min="0">
+            </div>
+            
+            <!-- Tracker Item for Mood -->
+            <div class="tracker-item">
+                <h2>Mood</h2>
+                <!-- Dropdown menu for selecting the mood -->
+                <select id="moodSelect">
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                    <option value="excited">Excited</option>
+                </select>
+            </div>
+            
+            <!-- Tracker Item for Workout Details -->
+            <div class="tracker-item">
+                <h2>Workout</h2>
+                <!-- Input field for entering workout details -->
+                <input type="text" id="workout" placeholder="Enter workout details">
+            </div>
+        </div>
+
+        <!-- Save Button to submit the self-care data -->
+        <button id="saveButton">Save Today’s Self-Care</button>
+    </section>
+
+    <!-- Link to the JavaScript file for functionality -->
+    <script src="selfCare.js"></script>
+</body>
+
+</html>
